@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#sugarCravingButton {
+  font-size: 20px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#sugarCravingButton:hover {
+  background-color: darkred;
+}
+
+
+#gptResponse {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#gptResponse {
+  transition: opacity 0.3s ease;
+}
