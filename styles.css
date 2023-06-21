@@ -28,18 +28,20 @@ body {
   text-align: center;
 }
 
-#gptResponse {
-  transition: opacity 0.3s ease;
-}
+
 
 #gptResponse {
   margin-top: 20px;
   text-align: center;
-  animation: flash 1s linear infinite;
   transition: opacity 0.3s ease;
+}
+
+.flash {
+  animation: flash 1s linear infinite;
 }
 
 @keyframes flash {
   0%, 100% { opacity: 1; color: #000; }
   50% { opacity: 0.5; color: #008000; }
 }
+

@@ -4,14 +4,20 @@ const gptResponse = document.getElementById('gptResponse');
 async function displayResponse(response) {
   gptResponse.style.opacity = 0;
   gptResponse.textContent = '';
+  gptResponse.classList.add('flash');
   setTimeout(async () => {
     gptResponse.style.opacity = 1;
     for (let i = 0; i < response.length; i++) {
       gptResponse.textContent += response.charAt(i);
-      await new Promise(resolve => setTimeout(resolve, 50)); // Adjust the delay (in ms) between each character here
+      await new Promise(resolve => setTimeout(resolve, 50));
     }
+    setTimeout(() => {
+      gptResponse.classList.remove('flash');
+      gptResponse.style.color = '#008000';  // Set text color to green
+    }, 10000);  // Remove flash class and change text color after 10 seconds
   }, 300);
 }
+
 
 sugarCravingButton.addEventListener('click', async () => {
   gptResponse.textContent = 'Loading...';
