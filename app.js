@@ -26,7 +26,7 @@ sugarCravingButton.addEventListener('click', async () => {
 
 
 async function fetchGPTResponse(prompt) {
-  const apiKey = "myopenaikey";
+  const apiKey = "don't_think_so";
   const url = "https://api.openai.com/v1/engines/text-davinci-003/completions";
 
   const requestOptions = {
