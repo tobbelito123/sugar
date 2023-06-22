@@ -6,35 +6,44 @@ body {
   height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
-}
-
-#sugarCravingButton {
-  width: 300px;   /* Set width and height to the same value */
-  height: 300px;  /* Set width and height to the same value */
-  font-size: 50px;
-  border-radius: 50%;  /* Make it circular */
-  background-color: red;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  display: flex;  /* Center the text inside the button */
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 
+.btn {
+  width: 90%; /* take up almost the full screen width */
+  font-size: 30px;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+#sugarCravingButton {
+  background-color: red;
+}
 
 #sugarCravingButton:hover {
   background-color: darkred;
 }
 
-
-#gptResponse {
-  margin-top: 20px;
-  text-align: center;
+#exerciseButton {
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
 }
 
+#exerciseButton:hover {
+  background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+}
 
+#workButton {
+  background-color: green;
+}
+
+#workButton:hover {
+  background-color: darkgreen;
+}
 
 #gptResponse {
   margin-top: 20px;
@@ -50,4 +59,3 @@ body {
   0%, 100% { opacity: 1; color: #000; }
   50% { opacity: 0.5; color: #008000; }
 }
-
